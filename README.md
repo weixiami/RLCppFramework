@@ -23,8 +23,8 @@ C++基本开发库，负责封装线程池、HTTP、JSON、XML、日志、共享
 
 ## 安装
 ``` shell
-    mkdir build && cd build
-    cmake ..
+    mkdir release && cd release
+    cmake -DCMAKE_BUILD_TYPE=Release ..
     make
     make install
 ```

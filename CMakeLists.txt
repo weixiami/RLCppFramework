@@ -2,12 +2,14 @@ cmake_minimum_required(VERSION 3.5.1)
 project(rl_cpp_framework VERSION "1.0.0")
 
 
-set(CMAKE_BUILD_TYPE "Debug")
-if (CMAKE_BUILD_TYPE MATCHES "Debug")
-    add_definitions(-DDEBUG)
-else()
+
+
+if (CMAKE_BUILD_TYPE MATCHES "Release")
     set(CMAKE_BUILD_TYPE "Release")
-endif (CMAKE_BUILD_TYPE MATCHES "Debug")
+else()
+    add_definitions(-DDEBUG)
+    set(CMAKE_BUILD_TYPE "Debug")
+endif ()
 message("-- Current Mode: " ${CMAKE_BUILD_TYPE})
 
 
