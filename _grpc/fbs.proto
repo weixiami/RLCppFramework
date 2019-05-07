@@ -1,0 +1,26 @@
+
+
+
+// protoc --grpc_out=. --plugin=protoc-gen-grpc=`which grpc_cpp_plugin` ./fbs.proto
+// protoc --cpp_out=. ./fbs.proto
+
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "io.grpc.reckless.fbs";
+option java_outer_classname = "FbsProto";
+option objc_class_prefix = "HLW";
+
+package fbs;
+
+service BizPipe
+{
+    rpc onBusiness (stream BizData) returns (stream BizData) {}
+}
+
+message BizData
+{
+    bytes byteData = 1;
+}
+
+
