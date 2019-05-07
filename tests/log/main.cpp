@@ -8,14 +8,14 @@
 
 int main(int argc, char const *argv[])
 {
-    LOG_INIT()
+    rcf::logInit(argv[0], "./log");
 
 	LOG(INFO) << "Hello, GOOGLE!";
     LOG(WARNING) << "WARNING, GOOGLE!";
     LOG(ERROR) << "ERROR, GOOGLE!";
     LOG(FATAL) << "FATAL, GOOGLE!";
 
-    LOG_RELEASE();
+    rcf::logRelease();
     return 0;
 }
 
