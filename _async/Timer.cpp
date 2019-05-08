@@ -53,6 +53,12 @@ void Timer::join()
     }
 }
 
+void Timer::detach()
+{
+    if (!m_pTd) return;
+    m_pTd->detach();
+}
+
 /* Don't Use This Function */
 void Timer::workAsync(const void *pArgs)
 {

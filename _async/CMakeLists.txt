@@ -10,8 +10,8 @@ install(FILES
         ${PROJECT_SOURCE_DIR}/_async/thread_pool.h
         ${PROJECT_SOURCE_DIR}/_async/thread.h
         ${PROJECT_SOURCE_DIR}/_async/timer.h 
-        DESTINATION /usr/local/include/reckless/)
-install(TARGETS rl_async ARCHIVE DESTINATION /usr/local/lib/)
+        DESTINATION /reckless/include/RCF/)
+install(TARGETS rl_async ARCHIVE DESTINATION /reckless/lib/)
 
 
 

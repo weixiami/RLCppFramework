@@ -1,7 +1,5 @@
 cmake_minimum_required(VERSION 3.5.1)
-project(rl_cpp_framework VERSION "1.0.0")
-
-
+project(RLCppFramework VERSION "1.0.0")
 
 
 if (CMAKE_BUILD_TYPE MATCHES "Release")

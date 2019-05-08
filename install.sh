@@ -1,5 +1,7 @@
 #!/bin/bash
 
+csrutil disable
+
 if [ ! -d "release" ]; then
     mkdir release
 fi

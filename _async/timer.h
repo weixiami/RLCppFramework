@@ -23,6 +23,7 @@ public:
     void start(const Timer_Type &ttType = TT_Async);
     void stop();
     void join();
+    void detach();
     
     // Don't Use This Function
     void workAsync(const void *pArgs);

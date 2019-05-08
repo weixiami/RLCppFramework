@@ -20,7 +20,7 @@ int main(int argc, char const *argv[])
     }, nullptr);
 
     tr.start();
-    tr.join();
+    tr.detach();
 
 
     rcf::ThreadPool tp(128);
