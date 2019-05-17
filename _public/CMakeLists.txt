@@ -6,7 +6,8 @@ install(FILES
         ${PROJECT_SOURCE_DIR}/_public/number.h
         ${PROJECT_SOURCE_DIR}/_public/str.h
         ${PROJECT_SOURCE_DIR}/_public/path.h
-        DESTINATION /reckless/include/RCF)
+        ${PROJECT_SOURCE_DIR}/_public/sleep.h
+        DESTINATION /reckless/RCF/include/RCF)
 
 
 

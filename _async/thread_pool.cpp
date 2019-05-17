@@ -47,11 +47,11 @@ void ThreadPool::join()
     }
     m_vctPool.clear();
 }
-void ThreadPool::post(const std::function<void(const void*)> &fcCallBack, const void *pArgs)
+void ThreadPool::post(const std::function<void(const void*)> &onCallBack, const void *pArgs)
 {
     if (m_vctPool.empty()) return;
     std::lock_guard<std::recursive_mutex> lock(m_lockPost);
-    m_vctPool[m_un64Pos]->ioService.post(boost::bind(fcCallBack, pArgs));
+    m_vctPool[m_un64Pos]->ioService.post(boost::bind(onCallBack, pArgs));
     m_un64Pos++;
 }
 

@@ -12,8 +12,8 @@ target_link_libraries(rl_log
 
 install(FILES 
         ${PROJECT_SOURCE_DIR}/_log/log.h
-        DESTINATION /reckless/include/RCF)
-install(TARGETS rl_log ARCHIVE DESTINATION /reckless/lib/)
+        DESTINATION /reckless/RCF/include/RCF)
+install(TARGETS rl_log ARCHIVE DESTINATION /reckless/RCF/lib/)
 
 
 

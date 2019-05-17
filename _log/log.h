@@ -5,7 +5,7 @@
 #include <sys/types.h>
 #include <sys/stat.h>
 
-
+// https://blog.csdn.net/chenguangxing3/article/details/17150069
 // https://www.cnblogs.com/hiloves/p/6009707.html
 
 /* 级别
@@ -19,7 +19,7 @@
 namespace rcf
 {
     /* 初始化日志 */
-    void logInit(const char* argv0, const std::string& strPath = "./log");
+    void logInit(const char* argv0, const std::string& strPath = "./log", const bool bIsDaemon = false);
     /* 注销日志 */
     void logRelease();
 }

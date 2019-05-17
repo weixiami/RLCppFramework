@@ -29,7 +29,7 @@ public:
     void start();
     void stop();
     void join();
-    void post(const std::function<void(const void*)> &fcCallBack, const void *pArgs);
+    void post(const std::function<void(const void*)> &onCallBack, const void *pArgs);
     
     // Don't Use This Function
     void work(const void *pArgs);

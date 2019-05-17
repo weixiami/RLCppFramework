@@ -8,7 +8,7 @@
 
 int main(int argc, char const *argv[])
 {
-    rcf::logInit(argv[0], "./log");
+    rcf::logInit(argv[0], "./debug/tests/log/log", true);
 
 	LOG(INFO) << "Hello, GOOGLE!";
     LOG(WARNING) << "WARNING, GOOGLE!";
